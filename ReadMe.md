@@ -47,7 +47,7 @@ Suppose a user wants to download **5 minicubes of 3×128×128 for a specific sce
   * For each query:
     * **1 Range Request** for the Local File Header of the chunk.
     * **1 Range Request** for the chunk itself.
-  * **Total:** **13 GET operations** (2n+3 GETs).
+  * **Total:** **14 GET operations** (2n+3 GETs).
 
 This is not a cherrypick; it highlights the reasons why ZARR+Zipped is terrible slow in cloud environment settings, as @RichardScottOZ pointed out. You may have also noticed that it is slow in Python. Zarr-Python use zipfile, which is poorly optimized. Please check the official documentation for more details: https://docs.python.org/3/library/zipfile.html
 
