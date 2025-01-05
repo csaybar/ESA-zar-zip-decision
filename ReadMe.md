@@ -47,7 +47,7 @@ Suppose a user wants to download **5 minicubes of 3×128×128 for a specific sce
   * For each query:
     * **1 Range Request** for the Local File Header of the chunk.
     * **1 Range Request** for the chunk itself.
-  * **Total:** **14 GET operations** (2n+3 GETs).
+  * **Total:** **14 GET operations** (2n+4 GETs).
 
 This is not a cherrypick; it highlights the reasons why ZARR+Zipped is terrible slow in cloud environment settings, as @RichardScottOZ pointed out. You may have also noticed that it is slow in Python. Zarr-Python use zipfile, which is poorly optimized. Please check the official documentation for more details: https://docs.python.org/3/library/zipfile.html
 
@@ -68,7 +68,7 @@ If this means creating 4D datacubes, well it is quite true. Zarr excels here. Th
 
 - **Zarr (Directory-Based)**: In contrast, Zarr's directory-based structure only requires **n * k + 1** operations. Since Zarr supports n-dimensional chunking, you can further reduce the number of operations by optimizing your chunking strategy.
 
-- **Zarr (Zipped - ESA idea)**: However, the Zarr+ZIP format proposed by ESA, is less efficient. It requires **(2n + 3) * k** operations.
+- **Zarr (Zipped - ESA idea)**: However, the Zarr+ZIP format proposed by ESA, is less efficient. It requires **(2n + 4) * k** operations.
 - 
 **Zipped format for dissemination Source: Not available**
 
