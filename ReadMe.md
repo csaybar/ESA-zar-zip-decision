@@ -33,7 +33,7 @@ Suppose a user wants to download **5 minicubes of 3×128×128 for a specific sce
 1. **COG**
   * **2 GET Request** to read the file header and IFD.
   * **5 GET Requests** to fetch the continuous chunks of data.
-  * **Total:** **6 GET operations** (n+2 GETs).
+  * **Total:** **7 GET operations** (n+2 GETs).
 2. **ZARR (Consolidated)**
   * **1 GET Request** to read the consolidated metadata.
   * **5 GET Requests** to fetch the chunks.
