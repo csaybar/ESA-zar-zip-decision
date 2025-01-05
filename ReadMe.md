@@ -1,8 +1,7 @@
 
 ![657e3c5e0885ee4e5c2062c58f9aa094fa4b14a4](https://github.com/user-attachments/assets/8299e5b0-4251-455d-a507-5c3d55272735)
 
-This is my comment in the [PANGEO](https://discourse.pangeo.io/t/whats-the-best-file-format-to-chose-for-raster-imagery-and-masks-products/4555/ 1) discussion
-about the decision of ESA for using ZAR+ZIP format. Unfortunately, new users cannot post many links.
+This is my personal opinion on the [PANGEO](https://discourse.pangeo.io/t/whats-the-best-file-format-to-chose-for-raster-imagery-and-masks-products/4555/) discussion regarding ESA's decision to use ZAR+ZIP format. Unfortunately, new users cannot post many links in the PANGEO discourse, so I decided to put it here.
 
 
 # **Comment:**
