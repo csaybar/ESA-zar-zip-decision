@@ -81,11 +81,11 @@ Personally, I don’t know anyone who believes that ZARR+ZIP is a good choice fo
 
 Outside of Python, Zarr’s support is quite limited. **Zarr is not a CLEAR spatial format**. Yeah, I know it is a [community standard of the OGC](https://www.ogc.org/publications/standard/zarr-storage-specification/) but someone might call the coordinates “x, y,” another might call them “lat, long” , “lat, lon,” or “latitude and longitude,” and so on, same problem with other CRITICAL metadata.
 
- What’s the consequence of this? For example, Brockmann Consult (who are partners in the [EOPF](https://cpm.pages.eopf.copernicus.eu/eopf-cpm/main/PSFDjan2024.html#eopf-storage-format)) just generated a large 3TB dataset in ZARR+ZIP format. When you download this Zarr and load it into QGIS (https://opara.zih.tu-dresden.de/bitstreams/1221405a-ab9d-4dd8-b65e-b1b58d8f1423/download), this happens.
+What is the consequence of this? For instance, Brockmann Consult, partners of this [EOPF](https://cpm.pages.eopf.copernicus.eu/eopf-cpm/main/PSFDjan2024.html#eopf-storage-format), recently also contributed to the generation of a very large ~2TB dataset in ZARR+ZIP format (you can check it [here](https://opara.zih.tu-dresden.de/items/bb45480f-f7d3-420f-85b8-b4993715b761/full)). When you download the [demo](https://opara.zih.tu-dresden.de/bitstreams/1221405a-ab9d-4dd8-b65e-b1b58d8f1423/download) (in Zarr+Zip format), decompress it, and load it into QGIS, this happens.
 
 ![ezgif-4-459e4813d1](https://github.com/user-attachments/assets/cc232ecf-003c-4f73-bcb1-a9e501e2d15c)
 
-I’m downloading this dataset, and the patches for Oceania are showing up in Canada. Needless to say, ZARR+ZIP causes an error when you drag it into QGIS.
+I’m downloading this dataset, and the patches for Oceania are showing up in Canada. Needless to say, ZARR+ZIP causes an error when you directly drag it into QGIS.
 
 I think this decision only considers a very small sector of the EO community. **We are in a bubble, we are a minority**. What about the part of the community that doesn’t use Python or those who don’t program and rely on GIS software with less support, like ILWIS, IDRISI, or SPRING? Many communities in the Amazon in Peru and Brazil use SPRING/TerraLib, and all their raster data is in GeoTIFF v1.0. How are we going to teach them to use ZARR+Zipped now?
 
