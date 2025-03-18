@@ -1,5 +1,9 @@
 ![657e3c5e0885ee4e5c2062c58f9aa094fa4b14a4](https://github.com/user-attachments/assets/8299e5b0-4251-455d-a507-5c3d55272735)
 
+Updates:
+
+- I raised some concerns regarding the COG description in the official repository (https://gitlab.eopf.copernicus.eu/cpm/eopf-cpm/-/issues/700). 18/03/2025
+
 Important links:
 
 - **[Product Structure and Format Definition — EOPF](https://cpm.pages.eopf.copernicus.eu/eopf-cpm/main/PSFDjan2024.html#product-structure-and-format-definition)**
